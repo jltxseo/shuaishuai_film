@@ -15,7 +15,7 @@ class Routes {
   static String txt_search = '/txt_search';
   static String video_history = '/video_history';
 
-  static void configureRoutes(Router router) {
+  static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {
         print("ROUTE WAS NOT FOUND !!!");
